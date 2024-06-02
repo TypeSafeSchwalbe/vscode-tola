@@ -6,6 +6,9 @@
   	</array>
 	<key>name</key> <string>tola</string>
   	<key>patterns</key> <array> 
+		<dict>
+			<key>include</key> <string>#types</string>
+		</dict>
     	<dict>
       		<key>include</key> <string>#main</string>
     	</dict>
@@ -13,10 +16,19 @@
 	<key>scopeName</key> <string>source.tola</string>
   	<key>uuid</key> <string>8f285c78-2801-11ee-be56-0242ac120002</string>
   	<key>repository</key> <dict>
+		<key>types</key> <dict>
+			<key>patterns</key> <array> 
+
+				<!-- primitive types -->
+				<dict>
+          			<key>match</key> <string>\b(u8|u16|u32|u64|s8|s16|s32|s64|f32|f64|usize|unit|bool)\b</string>
+          			<key>name</key> <string>storage.type.primitive.tola</string>
+        		</dict>
+
+			</array>
+		</dict>
     	<key>main</key> <dict>
       		<key>patterns</key> <array> 
-	
-				<!-- todo: types (under 'type' instead of 'main') -->
 
 				<!-- comments -->
 				<dict>
@@ -40,8 +52,6 @@
           			<key>name</key> <string>constant.language.tola</string>
         		</dict>
 
-				<!-- todo: procedure declarations -->
-
 				<!-- calls -->
 				<dict>
           			<key>match</key> <string>\b([a-zA-Z_][a-zA-Z0-9_]*)\s*(\()</string>
@@ -54,8 +64,6 @@
             			</dict>
           			</dict>
         		</dict>
-
-				<!-- todo: variable declarations -->
 
 				<!-- number literal -->
 				<dict>
