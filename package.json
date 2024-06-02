@@ -1,0 +1,25 @@
+{
+    "name": "vscode-tola",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": ">=0.9.0-pre.1"
+    },
+    "publisher": "TypeSafeSchwalbe",
+    "contributes": {
+        "languages": [
+            {
+                "id": "tola",
+                "aliases": ["Tola Source File"],
+                "extensions": [".tola"],
+                "configuration": "./tola-config.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "tola",
+                "scopeName": "source.tola",
+                "path": "./syntaxes/tola.tmlanguage"
+            }
+        ]
+    }
+}
