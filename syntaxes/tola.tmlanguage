@@ -73,13 +73,13 @@
 
 				<!-- operators -->
         		<dict>
-					<key>match</key> <string>(\=|\+|\-|\*|\/|\%|\<|\>|\!|\&\&|\||\.|\:)</string>
+					<key>match</key> <string>(\=|\+|\-|\*|\/|\%|\<|\>|\!|\&|\||\.|\:)</string>
           			<key>name</key> <string>keyword.operator.tola</string>
         		</dict>
 
 				<!-- string literals -->
         		<dict>
-					<key>begin</key> <string>((b)?\&quot;)</string>
+					<key>begin</key> <string>((c)?\&quot;)</string>
           			<key>beginCaptures</key> <dict>
             			<key>1</key> <dict>
               				<key>name</key> <string>string.punctuation.tola</string>
