@@ -45,6 +45,10 @@
           			<key>match</key> <string>\b(mod|ext|fun|struct|var)\b</string>
           			<key>name</key> <string>storage.modifier.tola</string>
         		</dict>
+				<dict>
+          			<key>match</key> <string>\b(as|sizeof)\b</string>
+          			<key>name</key> <string>keyword.other.tola</string>
+        		</dict>
 
 				<!-- constant -->
 				<dict>
