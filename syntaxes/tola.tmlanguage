@@ -60,7 +60,7 @@
           			<key>name</key> <string>keyword.control.tola</string>
         		</dict>
 				<dict>
-          			<key>match</key> <string>\b(mod|ext|fun|struct|var|pub|use|const)\b</string>
+          			<key>match</key> <string>\b(mod|ext|exp|fun|struct|var|pub|use|const)\b</string>
           			<key>name</key> <string>storage.modifier.tola</string>
         		</dict>
 				<dict>
